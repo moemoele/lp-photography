@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400i|Cormorant+Upright');
+
+:root{
+  --runningtext: 14px verdana ;
+  --thickfont: montserrat;
+  --curvefont: cormorant upright ;
+  --darkcolor: RGB(43,163,149);
+  --lightcolor:white;
+  --headerheight: 70px;
+ }
+
+body{
+font: var(--runningtext);
+margin:0;
+padding:0;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+  transition-duration:1s;
+}
+img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-size:inherit; 
+  color:inherit;
+  font-weight:inherit;}
+
+button, input[type="submit"], input[type="reset"] {
+    background: white;
+    color: var(--darkcolor);
+    border: 1px solid white;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  transition-duration:1s;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover{
+  color: white;
+  background: var(--darkcolor);
+}
+
+.parallax{
+  background-repeat:none;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:center;
+  height: fit-content;
+}
+.padding10vw{
+  padding:10vw;
+}
+.border{
+  border: 6px solid;
+  text-align:center;
+  padding: 1vw;
+  background: var(--darkcolor);
+   font-size: 20px;
+   text-transform: uppercase;
+  font-family: var(--thickfont);
+}
+
+
+header{
+ height: var(--headerheight);
+ background: white;
+ position:fixed; 
+ width: 100vw;
+ top:0;
+ z-index:1000;
+ display:flex; 
+ color:gray;
+}
+
+.wrapper{
+ display:flex;
+ width:60%;
+ margin:auto;  
+ justify-content:space-between;
+}
+
+.textcenter{
+	text-align:center;
+	margin:auto;
+}
+
+#banner{
+ margin-top: var(--headerheight);
+  background-image:url("https://images.pexels.com/photos/52496/photographer-camera-photo-photos-52496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  text-align:center;
+  display:flex;
+	color: var(--darkcolor);
+	text-shadow: 7px 7px 15px black;
+	height: 50vw;
+ }
+.padding5{
+	padding:5px;
+}
+.padding10{
+	padding:10px;
+}
+.sitename{
+  font-weight:bold;
+  font-family: var(--thickfont);
+  font-size: 8vw;
+  text-transform: uppercase;
+}
+
+.sitedescription{
+  font-family: var(--curvefont);
+  font-size: 4vw;
+  font-style:italic;
+
+}
+.dot{
+  color:#E47230;
+}
+
+#thongtin{
+  background-image: url("https://image.ibb.co/b9TT97/Untitled_1.jpg"); 
+    color:white; 
+display:flex;
+}
+#thongtin h1{
+    font-weight: 600;
+}
+
+.wrapchild{
+  width:45%;
+  background:none;
+}
+
+
+#category{
+  background-image:   url("https://preview.ibb.co/gEfKgn/pexels_photo_134469.jpg");
+ font-family: var(--thickfont);
+ text-transform:uppercase;
+  color:white;
+  display:flex;
+}
+#category a{
+    font-weight: 500;
+}
+
+.smallerwidth{
+  width:40%;
+  margin:auto;
+}
+
+.padding3vw{
+  display:block;
+  margin-top:5vw;
+  padding: 3vw;
+  }
+
+.changewhenhover:hover{
+  background: none;
+  color:black;
+}
+
+#gallery{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.onethirdwidth{
+  width: 33.3333333%;
+  position: relative;
+  display:flex;
+  height:30vw;
+}
+
+.overlay{
+  background:RGBa(57,220,201,0.4);
+  height: 100%;
+  position:absolute;
+  top:0;
+  display:flex;
+  flex-direction:column;
+  opacity:0;
+color:white;  
+	font-size:14px;
+	transition-duration:0.5s;
+  }
+
+
+.overlay:hover{
+  opacity:1;
+}
+
+#lienhe{
+  color:white;
+  background: var(--darkcolor);
+	text-align:Center;
+       }
+
+
+#lienhe h1{
+	margin:auto;
+	padding: 20px;
+    font-weight: 600;
+}
+
+.bigtextbutsmaller{
+	font-family: var(--thickfont);
+	font-size:20px;
+	text-transform:uppercase;
+	margin:5vw 0 0 0 ;
+	}
+.width40{
+	width:30%;
+	text-align:left;
+}
+.width60{
+	width:60%;
+}
+.test{
+	background:black;
+}
+form{
+	text-align:center;
+	margin-top:5vw;
+}
+
+form>input[type="text"],textarea{
+	width:100%;
+	max-width:400px;  
+	color: var(--darkcolor);
+	font-family: var(--runningfont);
+	margin:3px 0;
+	padding-left:20px;
+	height:29px; 
+	border :none;
+	box-sizing:border-box;
+}
+textarea{
+	height: 40%;
+	resize:none;	
+	padding-top:8px;
+}
+::placeholder{
+	color: var(--darkcolor);
+	font-size:12px;
+}
+
+i{
+	cursor:pointer;
+}
+
+.footer{
+	display:flex;
+	width:60%; 
+	margin:auto;
+	justify-content:space-between;
+	color:var(--darkcolor);
+	padding-top: 10vw;
+	font-size:15px;
+}  
+
+footer .fa{
+	font-size:40px;
+	}
+
+
+@media  screen and (max-width:800px){
+	.wrapper{
+		width:90%;
+		flex-direction:column;
+	}
+	.wrapchild{
+		width:100%;
+	}
+}
